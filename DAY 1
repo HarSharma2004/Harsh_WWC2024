@@ -1,0 +1,77 @@
+Problem 1:  WAP on sum of natural numbers upto n.
+
+CODE:
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n, sum = 0;
+
+    cout << "Enter a positive integer: ";
+    cin >> n;
+
+    for (int i = 1; i <= n; ++i) {
+        sum += i;
+    }
+
+    cout << "Sum = " << sum << endl;
+
+    return 0;
+}
+
+
+PROBLEM 2: WAP to check wether a number prime or not.
+
+CODE:
+#include <iostream>
+
+using namespace std;
+
+bool isPrime(int num) {
+    if (num <= 1) {
+        return false;
+    }
+    for (int i = 2; i * i <= num; ++i) {
+        if (num % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int main() {
+    int num;
+
+    cout << "Enter a positive integer: ";
+    cin >> num;
+
+    if (isPrime(num)) {
+        cout << num << " is a prime number." << endl;
+    } else {
+        cout << num << " is not a prime number." << endl;
+    }
+
+    return 0;
+}
+
+
+PROBLEM 3:  Print your whole academic bio data:Name,uid,section,area of interest,age,last ear cgpa,dob,hometown.
+
+CODE:
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    cout << "Name: Harsh Sharma" << endl;
+    cout << "UID: 22BCS10037" << endl;
+    cout << "Section: 630 A" << endl;
+    cout << "Area of Interest: Gaming" << endl;
+    cout << "Age: [Your Age]" << endl;
+    cout << "Last Year CGPA: 6.9" << endl;
+    cout << "DOB: 16/07/2004" << endl;
+    cout << "Hometown: Gorakhpur, Uttar Pradesh" << endl;
+
+    return 0;
+}
